@@ -1,7 +1,114 @@
 <!DOCTYPE html>
-<html>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-	</body>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>The FHIR Project at Georgia Tech | GT-FHIR2, the OMOP on FHIR Project</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="The FHIR Project at Georgia Tech" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Georgia Tech FHIR Server with an OMOP CDM mapping to FHIR Resources." />
+<meta property="og:description" content="Georgia Tech FHIR Server with an OMOP CDM mapping to FHIR Resources." />
+<link rel="canonical" href="http://omoponfhir.org/" />
+<meta property="og:url" content="http://omoponfhir.org/" />
+<meta property="og:site_name" content="GT-FHIR2, the OMOP on FHIR Project" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The FHIR Project at Georgia Tech" />
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"The FHIR Project at Georgia Tech","url":"http://omoponfhir.org/","description":"Georgia Tech FHIR Server with an OMOP CDM mapping to FHIR Resources.","name":"GT-FHIR2, the OMOP on FHIR Project","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=03ed0a34494b61dbade45505bd8650143c42b003">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">GT-FHIR2, the OMOP on FHIR Project</h1>
+      <h2 class="project-tagline">Georgia Tech FHIR Server with an OMOP CDM mapping to FHIR Resources.</h2>
+      
+        <a href="https://github.com/omoponfhir/omoponfhir-main" class="btn">View on GitHub</a>
+      
+      
+    </section>
+
+    <section class="main-content">
+      <h1 id="the-fhir-project-at-georgia-tech">The FHIR Project at Georgia Tech</h1>
+
+<p>OMOPonFHIR server is a Georgia Tech’s Fast Healthcare Interoperability Resources (FHIR) project to build a FHIR resource on Observational Medical Outcomes Partnership (OMOP) common data model (CDM). It is built on top of <a href="http://hapifhir.io">Hapi Fhir</a> libraries. Currently, OMOPonFHIR support DSTU2 and STU3.</p>
+
+<p>The key component of GT-FHIR is a data access layer that has been modified to support any database schema. The component allows OMOP CDM to be deployed as a backend database. FHIR resources from/to OMOP CDM mapping is done at the gt-fhir-entities. However, as FHIR and OMOP CDM cannot be mapped one-to-one, some of data elements are set statically. Some mappings require multiple FHIR entity-jpa classes to support bidirectional mappings.</p>
+
+<p>OMOP to FHIR or FHIR to OMOP Mapping information can be found at <a href="https://www.ohdsi.org/web/wiki/doku.php?id=projects:workgroups:mappings_between_ohdsi_cdm_and_fhir">OHDSI FHIR Workgroup wiki page</a>.</p>
+
+<p>We are constantly working on mapping new concepts and adding to new features. <em>Pull requests are welcome!</em> For more details on source codes, visit <a href="https://github.com/omoponfhir/omoponfhir-main/">OMOPonFHIR Project Github</a>.</p>
+
+<h2 id="current-omoponfhir-version">Current OMOPonFHIR Version</h2>
+<p><strong>Snapshot of OMOPonFHIR</strong>: There is a public OMOPonFHIR site that shows the latest snapshot. This runs with HAPI-FHIR’s UI Testpage running over Synpuff data source in OMOP v5. <a href="https://apps.hdap.gatech.edu/gt-fhir-smart/">OMOPonFHIR Snapshot Server</a></p>
+
+<p><strong>SMART on FHIR</strong>: OMOPonFHIR is also equipped to support SMART on FHIR. OMOPonFHIR server has built-in services to support SMART on FHIR Authorization flow. This allows to simulate EHR-launching or stand-alone launching. The github page has a link to the smart on fhir launcher.</p>
+
+<p>[Deployment scripts] OMOPonFHIR includes docker composer, which helps deploying the server in the docker container.</p>
+
+<h2 id="people">People</h2>
+<p><strong>FHIR and Lead</strong></p>
+<ul>
+  <li><a href="https://github.com/myungchoi">Myung Choi</a></li>
+</ul>
+
+<p><strong>OMOP CDM</strong></p>
+<ul>
+  <li><a href="https://github.com/BSCrumpton">Saul Crumpton</a></li>
+</ul>
+
+<p><strong>OMOP CDM</strong></p>
+<ul>
+  <li><a href="https://github.com/orgs/gt-health/people/rstarr7">Richard Starr</a></li>
+</ul>
+
+<p><strong>DevOp and Deployment Support</strong></p>
+<ul>
+  <li><a href="https://github.com/soto14">Eric Soto</a></li>
+</ul>
+
+<p><strong>Infrastructure</strong></p>
+<ul>
+  <li><a href="https://github.com/MikeRileyGTRI">Michael Riley</a></li>
+</ul>
+
+<h2 id="collaborators">Collaborators</h2>
+<ul>
+  <li>Apervita</li>
+  <li>Cerner</li>
+  <li>Docsnap</li>
+  <li>Duke University</li>
+  <li>Emory University School of Medicine</li>
+  <li>Medical University in South Carolina</li>
+  <li>Mulesoft</li>
+  <li>Salesforce</li>
+  <li>UCB</li>
+  <li>VA</li>
+</ul>
+
+<h2 id="related-publications">Related Publications</h2>
+<ol>
+  <li>M. Choi, R. Starr, M. Braunstein, and J. Duke, “OHDSI on FHIR Platform Development with OMOP CDM mapping to FHIR Resources,” <a href="http://www.ohdsi.org/web/wiki/lib/exe/fetch.php?media=resources:ohdsionfhir_gatech.pdf">ODHSI 2016</a></li>
+  <li>H. Su, A. Henderson, M. Choi, R. Starr, and J. Sun, “Clinical Predictive Modeling Development and Deployment with OMOP CDM and FHIR,” <a href="http://www.ohdsi.org/web/wiki/lib/exe/fetch.php?media=resources:gt_ohdsi-abs-final.pdf">ODHSI 2015</a></li>
+  <li>K. Mohammed, M. Choi, A. Henderson, S. Iyengar, M. Braunstein, and J. Sun, “Clinical Predictive Modeling Development and Deployment through FHIR Web Services,” <a href="https://knowledge.amia.org/59310-amia-1.2741865/t004-1.2745466/f004-1.2745467/2248709-1.2745684/2248709-1.2745685?qr=1">AMIA 2015</a>
+r</li>
+</ol>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/omoponfhir/omoponfhir-main">omoponfhir-main</a> is maintained by <a href="https://github.com/omoponfhir">omoponfhir</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  </body>
 </html>
+
