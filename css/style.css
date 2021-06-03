@@ -1,0 +1,138 @@
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'logo logo logo logo'
+        'overview overview overview overview'
+        'fhir2omop fhir2omop blurb1 blurb1'
+        'blurb2 blurb2 omop2fhir omop2fhir'
+        'mappings mappings mappings mappings'
+        'map1 map2 map2 map3'
+        'demo demo demo demo'
+        'vid-inst vid-inst vid-use vid-use'
+        'links links links links'
+        'footer footer footer footer'
+        ;
+    grid-gap: 1rem;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.logo {
+    grid-area: logo
+}
+
+.overview {
+    grid-area: overview
+}
+
+.fhir2omop {
+    grid-area: fhir2omop
+}
+
+.blurb1 {
+    grid-area: blurb1
+}
+
+.blurb2 {
+    grid-area: blurb2
+}
+
+.omop2fhir {
+    grid-area: omop2fhir
+}
+
+.mappings {
+    grid-area: mappings
+}
+
+.map1 {
+    grid-area: map1
+}
+
+.map2 {
+    grid-area: map2
+}
+
+.map3 {
+    grid-area: map3
+}
+
+.demo {
+    grid-area: demo
+}
+
+.vid-inst {
+    grid-area: vid-inst
+}
+
+.vid-use {
+    grid-area: vid-use
+}
+
+.links {
+    grid-area: links
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.header,
+.logo,
+.overview,
+.fhir2omop,
+.blurb1,
+.blurb2,
+.omop2fhir,
+.mappings,
+.map1,
+.map2,
+.map3,
+.demo,
+.vid-inst,
+.vid-use,
+.links,
+.footer {
+    border: 1px #ccc solid;
+    padding: 0.5rem;
+}
+
+@media(max-width: 600px) {
+    .container {
+        grid-template-areas:
+        'header'
+        'logo'
+        'overview'
+        'fhir2omop'
+        'blurb1'
+        'blurb2'
+        'omop2fhir'
+        'mappings'
+        'map1'
+        'map2' 
+        'map3'
+        'demo'
+        'vid-inst'
+        'vid-use'
+        'links'
+        'footer'
+        ;
+    }
+}
